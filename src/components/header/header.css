@@ -1,0 +1,77 @@
+header {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.header_container {
+    text-align: center;
+    height: 100%;
+    position: relative;
+    padding: 3rem;
+}
+
+.cta {
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/********** HEADER SOCIAL MEDIA **********/
+
+.header-socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    right: 0;
+    top: 5rem;
+    padding: 4rem;
+    font-size: xx-large;
+} 
+
+/********** HEADER ME **********/
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
+    border: 1px solid gray;
+    margin-top: 2.5rem;
+    width: 21rem;
+    height: 22rem;
+    position: absolute;
+    left: calc(50% - 10.25rem);
+    border-radius: 10rem 0 10rem 10rem;
+}
+
+/********** SCROLL DOWN **********/
+
+.scroll-down {
+    position: absolute;
+    right: -4rem;
+    padding: 0 4rem;
+    bottom: 0;
+    font-size: xx-large;
+}
+
+/************************** MEDIUM DEVICES *******************/
+
+@media screen and (max-width: 1024px) {
+    header {
+        height: 70vh;
+    }
+}
+
+/************************** SMALL DEVICES *******************/
+
+@media screen and (max-width:600px) {
+    header {
+       height: 700px;
+    }
+
+    .header-socials {
+        display: none;
+    }
+}
+
+

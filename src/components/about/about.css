@@ -1,0 +1,101 @@
+.about-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-image: url(../../assets/about-me-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.content {
+    height: max-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 2rem 3rem;
+    background-color: white;
+    margin-top: 2rem;
+    margin-right: 2rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 1.5rem;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    overflow: hidden;
+    background-color: silver;
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    height: max-content;
+    justify-content: center;
+    gap: 1rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: transparent;
+    border-radius: 0.5rem;
+    width: 12rem;
+    padding: 1rem; 
+}
+.card:hover {
+    background-color: rgba(251, 251, 251, 0.651);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+.dark-mode .card {
+    background-color:rgba(27, 27, 197, 0.581);
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+}
+
+.dark-mode .card:hover {
+    background-color: rgba(152, 170, 201, 0.312);
+}
+
+.card-icon {
+    font-size: 2rem;
+}
+
+/************************** MEDIUM DEVICES *******************/
+
+@media screen and (max-width: 1024px) {
+    .about-container {
+        grid-template-columns: 1fr;
+    }   
+
+    .about-img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+/************************** SMALL DEVICES *******************/
+
+@media screen and (max-width:600px) {
+     .cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+        width: 16rem;
+        padding: 3rem;
+    }
+
+}
+
+
+
+
+
